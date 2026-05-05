@@ -62,7 +62,7 @@ async function clientstart() {
                 } catch (error) {
                     console.error(chalk.red('Gagal meminta pairing code:'), error);
                 }
-            }, 3000);
+            }, 10000);
         } else {
             const inputNumber = await question(chalk.blue.bold('\nNomor tidak terdeteksi di config. Masukan nomor (628xxx): '));
             const num = inputNumber.replace(/[^0-9]/g, '');
